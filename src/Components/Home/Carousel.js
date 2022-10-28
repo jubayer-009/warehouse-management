@@ -43,7 +43,7 @@ const Carousel = () => {
             <a href="#slide3" className="btn btn-circle">
               ❮
             </a>
-            <a href="#slide1" className="btn btn-circle">
+            <a href="#slide2" className="btn btn-circle">
               ❯
             </a>
           </div>
