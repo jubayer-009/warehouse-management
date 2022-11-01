@@ -10,8 +10,9 @@ const Services = () => {
   },[]);
   console.log(services);
   return (
-    <div className=' my-9 mx-9s'>
-      <h1 className='text-5xl font-bold text-center '>Our Services</h1>
+    <div className=" my-9 mx-9">
+      <h1 className="text-5xl font-bold text-center ">Our Services</h1>
+      <div className="divider"></div>
       <div className="card lg:card-side bg-base-100 shadow-xl grid grid-cols-4 gap-4  ">
         {services.map((service) => (
           <Service service={service}></Service>

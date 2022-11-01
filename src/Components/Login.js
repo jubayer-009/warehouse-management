@@ -43,12 +43,12 @@ const Login = () => {
   return (
     <div>
       <div className="flex items-center justify-center mt-32   ">
-        <div class=" bg-primary p-10  rounded-lg shadow-lg ">
-          <form className="" onSubmit={handleSubmit(onSubmit)}>
+        <div class=" bg-primary p-10  rounded-lg shadow-lg text-white ">
+          <form className="text-white" onSubmit={handleSubmit(onSubmit)}>
             <h1 className="text-xl font-bold text-center">Log In!</h1>
             <div class="form-control mx-auto mt-5">
               <label class="label">
-                <p class="label-text ">
+                <p class="label-text text-white ">
                   Email <span className="text-red-600">*</span>
                 </p>
               </label>
@@ -82,7 +82,7 @@ const Login = () => {
             </div>
             <div class="form-control mx-auto">
               <label class="label">
-                <p class="label-text ">
+                <p class="label-text text-white ">
                   Password <span className="text-red-600">*</span>
                 </p>
               </label>
@@ -119,7 +119,7 @@ const Login = () => {
                   alert("Sent email");
                 }}
                 href=""
-                class="label-text-alt  font-bold"
+                class="label-text-alt  font-bold text-white"
               >
                 Forget Password?
               </a>
@@ -129,7 +129,7 @@ const Login = () => {
               type="submit"
               value="Log in"
               className="btn bg-secondary  rounded-full 
-                 hover:bg-base-100 hover:text-white hover:btn-accent mt-5 text-accent "
+                 hover:bg-base-100 hover:text-white hover:btn-accent mt-5 text-white "
             />
           </form>
           <div>

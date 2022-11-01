@@ -37,7 +37,7 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <a>Services</a>
@@ -50,12 +50,14 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a href='#' className="btn btn-ghost normal-case text-xl">SM Enterprise</a>
+          <a href="#" className="btn btn-ghost normal-case text-xl">
+            SM Enterprise
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <a>Services</a>
@@ -68,13 +70,16 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end ">
           {user ? (
-            <a onClick={handleSignOut} className="btn">
+            <a
+              onClick={handleSignOut}
+              className="btn btn-secondary text-white"
+            >
               Log Out
             </a>
           ) : (
-            <Link to="/login" className="btn">
+            <Link to="/login" className="btn btn-secondary text-white">
               Log in
             </Link>
           )}

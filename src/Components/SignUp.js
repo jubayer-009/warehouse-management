@@ -48,11 +48,11 @@ const SignUp = () => {
   return (
     <div className="py-8  flex items-center justify-center">
       <div class="bg-primary p-10 rounded-lg shadow-lg  ">
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form className="text-white" onSubmit={handleSubmit(onSubmit)}>
           <h1 className="text-xl font-bold text-center">Sign Up!</h1>
           <div class="form-control  ">
             <label class="label">
-              <span class="label-text ">Name</span>
+              <span class="label-text  text-white">Name</span>
             </label>
             <input
               type="name"
@@ -63,7 +63,7 @@ const SignUp = () => {
           </div>
           <div class="form-control mx-auto">
             <label class="label">
-              <p class="label-text ">
+              <p class="label-text text-white ">
                 Email <span className="text-red-600">*</span>
               </p>
             </label>
@@ -97,7 +97,7 @@ const SignUp = () => {
           </div>
           <div class="form-control mx-auto">
             <label class="label">
-              <p class="label-text ">
+              <p class="label-text text-white ">
                 Password <span className="text-red-600">*</span>
               </p>
             </label>
@@ -131,7 +131,7 @@ const SignUp = () => {
           </div>
           <div class="form-control mx-auto">
             <label class="label">
-              <p class="label-text ">
+              <p class="label-text  text-white">
                 Confirm password <span className="text-red-600">*</span>
               </p>
             </label>
@@ -174,12 +174,12 @@ const SignUp = () => {
               type="submit"
               value="Sign Up"
               className="btn bg-secondary  rounded-full 
-                 hover:bg-base-100 hover:text-white hover:btn-accent mt-5 text-accent "
+                 hover:bg-base-100 hover:text-white hover:btn-accent mt-5 text-white "
             />
           }
         </form>
         <div>
-          <p className=" font-light my-3 ">
+          <p className=" font-light my-3 text-white ">
             Already Have account?
             <Link to="/login" className="font-bold ">
               Log in
